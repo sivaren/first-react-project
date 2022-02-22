@@ -1,2 +1,2 @@
-# tutorial-react-project
+# first-react-project
 Tutorial React Project
