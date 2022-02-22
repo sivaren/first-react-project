@@ -15,8 +15,8 @@ export default function Contact () {
             </ul>
             <p className="section-desc">Atau dapat melalui sosial media saya</p>
             <ul>
-                <li> <a href="https://www.instagram.com/ravaattar/" target="_blank">Instagram</a> </li>
-                <li> <a href="http://twitter.com" target="_blank">Twitter</a> </li>
+                <li> <a className="linkText" href="https://www.instagram.com/ravaattar/" target="_blank">Instagram</a> </li>
+                <li> <a className="linkText" href="http://twitter.com" target="_blank">Twitter</a> </li>
             </ul>
         </section>
     );

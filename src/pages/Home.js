@@ -7,8 +7,8 @@ export default function Home () {
 
     return (
         <section className="section">
-            <h1 className="section-title">Selamat datang di web Rava!</h1>
-            <p className="section-desc">Ini adalah project SPA saya pertama menggunakan ReactJS.</p>
+            <h1 className="section-title">Selamat datang di Web Rava!</h1>
+            <p className="section-desc">Ini adalah <span className="mainColor">Project SPA</span> pertama saya menggunakan <span className="mainColor">ReactJS.</span></p>
         </section>
     );
 }

@@ -26,7 +26,7 @@ export default function Contact () {
     }, [urlParams]);
 
     if (NotFound) {
-        return <h1>Artikel tidak ditemukan!</h1>;
+        return <div> <h1 className="not-found">Artikel Tidak Ditemukan 404</h1> </div>;
     }
 
     return (
@@ -38,7 +38,7 @@ export default function Contact () {
                     <time className="article-time">{new Date(article.publishedAt).toLocaleDateString()}</time>
                     <img className="article-image" src={article.imageUrl} alt={article.title} />
                     <p className="article-summary">{article.summary}</p>
-                    <p className="article-source">Source: <a href={article.url} target="_blank" rel="noreferrer">
+                    <p className="article-source">Source: <a className="linkText" href={article.url} target="_blank" rel="noreferrer">
                         {article.newsSite} </a> 
                     </p>
                 </div>

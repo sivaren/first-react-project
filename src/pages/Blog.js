@@ -21,7 +21,7 @@ export default function Blog () {
     return (
         <section className="section">
             <h1 className="section-title">Blog</h1>
-            <p className="section-desc">Berikut terdapat beberapa tulisan yang diambil dari suatu <a href="https://api.spaceflightnewsapi.net/v3/articles" target="_blank">API.</a>
+            <p className="section-desc">Berikut terdapat beberapa tulisan yang diambil dari suatu <a className="linkText" href="https://api.spaceflightnewsapi.net/v3/articles" target="_blank">API.</a>
             </p>
 
             {loading ? (<i>Loading articles ...</i>) 
@@ -30,7 +30,7 @@ export default function Blog () {
                     {articles.map(function (article) {
                         return (
                             <article key={article.id} className="article"> 
-                                <h2 className="article-title"> <Link to={`/blog/${article.id}`}> {article.title} </Link>  </h2>
+                                <h2 className="article-title"> <Link className="linkText" to={`/blog/${article.id}`}> {article.title} </Link>  </h2>
                                 <time className="article-time">{new Date(article.publishedAt).toLocaleDateString()}</time>
                             </article>
                         );
